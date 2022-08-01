@@ -29,15 +29,14 @@ require "my-functions.php";
 <table>
     <?php foreach ($products as  $key => $product ){ ?>
     <tr>
-        <td><?= $product["name"] . "\n"; ?></td>
-        <td><?= formatPrice($product["price"]) . "\n"; ?></td>
-        <td>HT : <?= priceExcludingVAT($product["price"]) . "\n"; ?></td>
-        <td><?= $product["weight"] . "\n";?>g</td>
-        <td><?= $product["discount"] . "\n";?>%</td>
+        <td>Nom : <?= $product["name"] . "\n"; ?></td>
+        <td>Prix : <?= formatPrice($product["price"]) . "\n"; ?></td>
+        <td>Prix HT : <?= priceExcludingVAT($product["price"]) . "\n"; ?></td>
+        <td>Poids : <?= $product["weight"] . "\n";?>g</td>
+        <td>Promo de : <?= $product["discount"]?>% = <?= discountedPrice($product["price"] ,$product["discount"]). "\n";?></td>
         <td><img src="<?= $product["picture_url"]?>" alt="" width="200"></td>
     </tr>
     <?php } ?>
-
 
 </table>
 

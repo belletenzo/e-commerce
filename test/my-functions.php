@@ -16,3 +16,8 @@ function priceExcludingVAT($TTC){
     return $HT;
 }
 
+function discountedPrice($price,$promo){
+    $promo = $price - ($price * $promo/ 100);
+    $promo = formatPrice($promo);
+    return $promo;
+}
