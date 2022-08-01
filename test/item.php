@@ -7,16 +7,7 @@ $URL = "https://paradoxetemporel.fr/wp-content/uploads/2020/06/PS5-support-verti
 include 'head.php';
 include 'header.php';
 
-?>
+require 'multidimensional-catalog.php';
 
-<html>
-    <body>
-        <div>
-            <p> Nom de l'article : <?= $name ?> </p>
-            <p> Prix : <?= $price ?>$ </p>
-            <img src= "<?=  $URL ?>" width="500" alt="test"/>
-        </div>
-    </body>
-</html>
+include 'footer.php';
 
-<?php include 'footer.php'; ?>
