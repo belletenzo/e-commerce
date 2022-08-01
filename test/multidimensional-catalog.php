@@ -15,7 +15,7 @@ $products = [
         "picture_url" => "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80",
     ],
     "Xbox" => [
-        "name" => "Xbox series x",
+        "name" => "Xbox series X",
         "price" => 50000,
         "weight" => 700,
         "discount" => 25,
@@ -31,6 +31,7 @@ require "my-functions.php";
     <tr>
         <td><?= $product["name"] . "\n"; ?></td>
         <td><?= formatPrice($product["price"]) . "\n"; ?></td>
+        <td>HT : <?= priceExcludingVAT($product["price"]) . "\n"; ?></td>
         <td><?= $product["weight"] . "\n";?>g</td>
         <td><?= $product["discount"] . "\n";?>%</td>
         <td><img src="<?= $product["picture_url"]?>" alt="" width="200"></td>

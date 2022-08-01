@@ -9,3 +9,10 @@ function formatPrice($price){
     echo number_format($price, $decimals) . "\n €";
 }
 
+function priceExcludingVAT($TTC){
+
+   $HT = (100*$TTC)/(100+20);
+   $HT = formatPrice($HT);
+    return $HT;
+}
+
