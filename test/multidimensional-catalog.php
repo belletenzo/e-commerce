@@ -31,9 +31,9 @@ require "my-functions.php";
     <tr>
         <td>Nom : <?= $product["name"] . "\n"; ?></td>
         <td>Prix : <?= formatPrice($product["price"]) . "\n"; ?></td>
-        <td>Prix HT : <?= priceExcludingVAT($product["price"]) . "\n"; ?></td>
+        <td>Prix HT : <?= formatPrice(priceExcludingVAT($product["price"])) . "\n"; ?></td>
         <td>Poids : <?= $product["weight"] . "\n";?>g</td>
-        <td>Promo de : <?= $product["discount"]?>% = <?= discountedPrice($product["price"] ,$product["discount"]). "\n";?></td>
+        <td>Promo de : <?= $product["discount"]?>% = <?= formatPrice(discountedPrice($product["price"] ,$product["discount"])) . "\n";?></td>
         <td><img src="<?= $product["picture_url"]?>" alt="" width="200"></td>
     </tr>
     <?php } ?>
