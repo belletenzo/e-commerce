@@ -12,12 +12,10 @@ function formatPrice($price){
 function priceExcludingVAT($TTC){
 
    $HT = (100*$TTC)/(100+20);
-   $HT = formatPrice($HT);
-    return $HT;
+    return  formatPrice($HT);
 }
 
 function discountedPrice($price,$promo){
     $promo = $price - ($price * $promo/ 100);
-    $promo = formatPrice($promo);
-    return $promo;
+    return formatPrice($promo);
 }
