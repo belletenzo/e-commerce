@@ -4,7 +4,8 @@ $products = [
         "name" => "PC Gamer",
         "price" => 150000,
         "weight" => 2000,
-        "discount" => 10,
+        "discount" => 0,
+        "stock" => 10,
         "picture_url" => "./images/pcgamer.avif",
     ],
     "Playstation 5" => [
@@ -12,6 +13,7 @@ $products = [
         "price" => 50000,
         "weight" => 700,
         "discount" => 5,
+        "stock" => 10,
         "picture_url" => "./images/ps5.avif",
     ],
     "Xbox" => [
@@ -19,6 +21,7 @@ $products = [
         "price" => 50000,
         "weight" => 700,
         "discount" => 25,
+        "stock" => 10,
         "picture_url" => "./images/xboxX.avif",
     ],
     "Switch" => [
@@ -26,6 +29,7 @@ $products = [
         "price" => 30000,
         "weight" => 200,
         "discount" => 5,
+        "stock" => 10,
         "picture_url" => "./images/switch.avif",
     ],
 ];

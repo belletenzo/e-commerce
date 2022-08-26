@@ -1,3 +1,4 @@
+<html lang="en">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top>
     <div class="container-fluid">
         <a class="navbar-brand menu" href="./index.html"><img id="Logo" src="./Image/Logo.svg" alt="Logo"></a>
@@ -35,3 +36,4 @@
         </div>
     </div>
 </nav>
+</html>

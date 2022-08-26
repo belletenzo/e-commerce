@@ -23,7 +23,7 @@ global $products;
                         <form method="post" action="cart.php">
                             <input type="hidden" name="key" value="<?php echo $key ?>">
                             <label for="number">Quantité a acheter : </label>
-                            <input type="number" name="quantité"  required min="1">
+                            <input type="number" name="quantité" value="0" min="0" max="<?= $product['stock'];?>">
                             <input type="submit" value="Acheter">
                         </form>
                         </p>
