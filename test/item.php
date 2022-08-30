@@ -1,7 +1,7 @@
 <?php
 
-include 'head.php';
-include 'header.php';
+include 'include/head.php';
+include 'include/header.php';
 require 'multidimensional-catalog.php';
-include 'footer.php';
+include 'include/footer.php';
 

@@ -1,6 +1,7 @@
 <?php
-include 'head.php';
-include 'header.php';
+include 'include/head.php';
+include 'include/header.php';
+
 require "products.php";
 require "my-functions.php";
 global $products;
@@ -44,3 +45,4 @@ checkAvailability($quantity,  $products[$key])
     </tr>
 </table>
 
+<?php include 'include/footer.php'; ?>

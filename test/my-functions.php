@@ -34,3 +34,10 @@ function checkQuantity($quantity)
         exit();
     }
 }
+
+function getAllProducts(){
+
+    $sqlprod = 'SELECT * FROM products';
+
+    return $sqlprod;
+}

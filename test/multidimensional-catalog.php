@@ -1,7 +1,6 @@
 <?php
 require_once "products.php";
 require "my-functions.php";
-include 'head.php';
 global $products;
 ?>
 
