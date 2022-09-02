@@ -4,7 +4,6 @@ $username = "enzo";
 $password ="";
 $db = "playground";
 
-sqlCo();
 
 function sqlCo()
 {

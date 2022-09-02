@@ -22,7 +22,7 @@ function discountedPrice(int $price, int $promo){
 function checkAvailability(int $quantity, array $product): void
 {
     if ($quantity > $product['stock']) {
-        header("Location: http://127.0.0.1/test/item.php");
+        header("Location: http://127.0.0.1/test/index.php");
         exit();
     }
 }
@@ -30,14 +30,8 @@ function checkAvailability(int $quantity, array $product): void
 function checkQuantity($quantity)
 {
     if ($quantity < 1) {
-        header("Location: http://127.0.0.1/test/item.php");
+        header("Location: http://127.0.0.1/test/index.php");
         exit();
     }
 }
 
-function getAllProducts(){
-
-    $sqlprod = 'SELECT * FROM products';
-
-    return $sqlprod;
-}
