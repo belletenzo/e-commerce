@@ -29,7 +29,7 @@
             </ul>
         </li>
         <li>
-            <a class="nav-link bg-danger " href="require/empty-cart.php">Vider Panier</a>
+            <a class="nav-link bg-danger " href="../inc/empty-cart.php">Vider Panier</a>
         </li>
     </ul>
 
