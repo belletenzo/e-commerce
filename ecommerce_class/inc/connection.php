@@ -5,7 +5,7 @@ function connection() {
   $host = 'localhost';
   $db = 'ecopro';
   $user = 'enzo';
-  $password = 'Enzo2120';
+  $password = 'enzo2120';
 
   $dsn = "mysql:host=$host;dbname=$db;charset=UTF8";
 
