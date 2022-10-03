@@ -3,7 +3,7 @@
 function connection() {
 
   $host = 'localhost';
-  $db = 'ecopro';
+  $db = 'test';
   $user = 'enzo';
   $password = 'enzo2120';
 
